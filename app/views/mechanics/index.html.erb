@@ -1,5 +1,5 @@
 <h1>All Mechanics</h1>
 
 <% @mechanics.each do |mechanic| %>
-  <p><%= mechanic.name %> - <%= mechanic.experience %> years</p>
+  <p><%=link_to "#{mechanic.name}", "/mechanics/#{mechanic.id}" %> - <%= mechanic.experience %> years</p>
 <% end %>
